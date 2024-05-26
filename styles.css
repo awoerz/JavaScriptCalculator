@@ -1,0 +1,76 @@
+
+:root {
+    --primary-color: #25255e;
+    --font-size: 1.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { 
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+/ <weight>: Use a value from 400 to 900
+*/
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.input-row {
+    width: 280px;
+}
+
+input {
+    width: 100%;
+    margin: .33rem 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: .5rem .75rem;
+    font-size: var(--font-size);
+    text-align: right;
+}
+
+button {
+    min-width: 40px;
+    margin: .33rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: .5rem .75rem;
+    color: white;
+    background: transparent;
+    font-size: var(--font-size);
+    transition: all ease .25s;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.container {
+    margin-top:15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    margin: .25rem;
+    width: 280px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
